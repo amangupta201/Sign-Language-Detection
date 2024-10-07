@@ -18,13 +18,11 @@ The project uses hand tracking to capture the hand region and feeds the cropped 
 Installation
 Clone the repository:
 
-bash
-Copy code
+
+
 git clone https://github.com/yourusername/sign-language-detection.git
 Install dependencies:
 
-bash
-Copy code
 pip install -r requirements.txt
 Download the pre-trained model: Place the keras_model.h5 and labels.txt in the Model/ directory.
 
@@ -32,8 +30,7 @@ Usage
 Data Collection
 To collect images for a specific sign (e.g., "Drink"), run:
 
-bash
-Copy code
+
 python dataCollection.py
 This will start a webcam stream. Make the desired sign in front of the camera and press the 's' key to capture an image. The captured images will be stored in the Data/ folder for later use in training.
 
@@ -43,8 +40,7 @@ Train the model using Google's Teachable Machine by uploading the collected imag
 Testing
 To test real-time gesture recognition:
 
-bash
-Copy code
+
 python Test.py
 This will start a webcam stream. The system will detect hand gestures and classify them using the trained model. The recognized label will be displayed on the screen.
 
@@ -57,8 +53,6 @@ cvzone
 numpy
 Install the dependencies with:
 
-bash
-Copy code
 pip install -r requirements.txt
 Model
 The model was trained using images collected manually through the dataCollection.py script and Google's Teachable Machine.
